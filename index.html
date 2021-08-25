@@ -12,7 +12,7 @@
     <style>
         .image {
             height: 150px;
-            width: 200px;
+            width: 100%;
         }
 
         .mainContainer {
@@ -22,30 +22,28 @@
         }
         
         .submit {
-            width: 100px;
+            width: 50%;
             background-color: #706e6e;
             color: #ffffff;
+            padding: 5px;
+            display: block;
+            margin: 0 auto;
         }
         
         .main {
-            margin: 10px;
+            margin: 5px;
+            width: 22%;
         }
 
         table {
-            width: 215px;
             background-color: #ffffff;
             border: 1px solid #000000;
-            padding: 5px;
+            padding: 2px;
         }
 
         @media only screen and (max-width: 950px) {
-            .mainContainer {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            table{
-                width: 180px;
+            .main{
+                width: 32%;
             }
 
             .image {
@@ -53,41 +51,34 @@
             }
 
             h4,p,.submit {
-                font-size: 10px;
+                font-size: 15px;
             }
         }
 
-        @media only screen and (max-width: 600px) {
-            .mainContainer {
-                flex-direction: row;
-                flex-wrap: wrap;
+        @media only screen and (max-width: 750px) {
+            .main{
+                width: 48%;
             }
 
-            table{
-                width: 180px;
+            h4, p, .submit {
+                font-size: 13px;
             }
 
-            .image {
+            .submit {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .main{
                 width: 100%;
             }
 
             h4, p, .submit {
-                font-size: 10px;
-            }
-        }
-
-        @media only screen and (max-width: 360px) {
-            .mainContainer {
-                flex-direction: column;
-                margin: 0;
+                font-size: 15px;
             }
 
-            table{
-                width: 100%;
-                margin: 0;
-            }
-
-            .image {
+            .submit {
                 width: 100%;
             }
         }
@@ -96,8 +87,8 @@
 
     <body>
         <div class = "mainContainer">
-            <div>
-                <table class = "main">
+            <div class = "main">
+                <table>
                     <tr>
                         <td>
                             <img class = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbAEY0CUwxc3uRfCuCjAuJIFv24FwV9S--pg&usqp=CAU">
@@ -114,8 +105,8 @@
                     </tr>
                 </table>
             </div>
-            <div>
-                <table class = "main">
+            <div  class = "main">
+                <table>
                     <tr>
                         <td>
                             <img class = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd2ItrjaPrCwYp5iQ6jZXRC88jqQMg7A7pQ&usqp=CAU">
@@ -132,8 +123,8 @@
                     </tr>
                 </table>
             </div>
-            <div>
-                <table class = "main">
+            <div class = "main">
+                <table>
                     <tr>
                         <td>
                             <img class = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa6Tjm2mE2rGkYShWkjxd9tzlZuV6u_knnhg&usqp=CAU">
@@ -150,8 +141,8 @@
                     </tr>
                 </table>
             </div>
-            <div>
-                <table class = "main">
+            <div class = "main">
+                <table>
                     <tr>
                         <td>
                             <img class = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozQ1BI0o0mHT42QRo8MB7ypxMw37GiIJsdg&usqp=CAU">    
@@ -168,8 +159,8 @@
                     </tr>
                 </table>
             </div>
-            <div>
-                <table class = "main">
+            <div class = "main">
+                <table>
                     <tr>
                         <td>
                             <img class = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5U82pQPQFtpG15ILu2eCNT8BHx8ql6yxOYQ&usqp=CAU">
@@ -186,8 +177,8 @@
                     </tr>
                 </table>
             </div>
-            <div>
-                <table class = "main">
+            <div class = "main">
+                <table>
                     <tr>
                         <td>
                             <img class = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdM4Naw6g6mBZtWbsk8r4u0DEauhmvKrpFg&usqp=CAU">
